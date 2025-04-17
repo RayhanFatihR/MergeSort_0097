@@ -48,6 +48,11 @@ void mergeSort(int low, int high){
         k++; //step 4.d.ii
     }
 
+    while(j <= high) //step 4e
+    {
+        
+
+    }
 
 
 }
