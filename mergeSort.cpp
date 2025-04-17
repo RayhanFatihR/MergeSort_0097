@@ -11,17 +11,24 @@ void input()
         cout << "Masukkan Panjang elemen array: ";
         cin >> n;
         if (n <= 20)
-        break;
-        cout << "\nMaksimal panjang array adalah 20\n" << endl;
+            break;
+        cout << "\nMaksimal panjang array adalah 20" << endl;
     }
 
+    cout << "\n-----------------------" << endl;
+    cout << "Inputkan isi elemen array" << endl;
+    cout << "-----------------------" << endl;
 
-
-
+    for (int i = 0; i < n; i++)
+    {
+        cout << "Masukkan elemen ke-" << i + 1 << " : ";
+        cin >> arr[i];
+    }
 
 }
 
-void mergeSort(int low, int high){
+void mergeSort(int low, int high)
+{
     if(low >= high){ //step 1
         return; //step 1a
     }
@@ -66,6 +73,22 @@ void mergeSort(int low, int high){
     {
         arr[x] = B[x];                  
     }
+}
 
+void output()
+{
+    cout << "\nData setelah diurutkan (Merge Sort): ";
+    for(int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
 
+int main()
+{
+    input();
+    mergeSort(0, n - 1);
+    output();
+    return 0;
 }
