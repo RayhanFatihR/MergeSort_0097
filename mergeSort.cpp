@@ -50,8 +50,9 @@ void mergeSort(int low, int high){
 
     while(j <= high) //step 4e
     {
-        
-
+        B[k] = arr[j]; //step 4e.i
+        j++; //step 4e.ii
+        k++; //step 4e.iii
     }
 
 
