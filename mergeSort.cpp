@@ -2,7 +2,7 @@
 using namespace std;
 
 int arr[20], B[20]; // ArrayUtama dan ArrayBantu
-int n;
+int n; //
 
 void input()
 {
@@ -22,14 +22,18 @@ void input()
 }
 
 void mergeSort(int low, int high){
-    if(low >= high){
-        return;
+    if(low >= high){ //step 1
+        return; //step 1a
     }
 
-    int mid = (low + high) / 2;
+    int mid = (low + high) / 2; //step 2
 
-    mergeSort(low, mid);
-    mergeSort(mid + 1, high);
+    mergeSort(low, mid); //step 3a
+    mergeSort(mid + 1, high); //step 3b
 
-    
+    int j, k; //step 4a
+    int i = low; 
+    j = mid + 1; //step 4b
+    k = low; //step 4c
+
 }
